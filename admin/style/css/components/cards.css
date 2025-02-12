@@ -1,0 +1,36 @@
+/* === Card Styles === */
+.custom-card {
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+.custom-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.custom-card-body {
+    padding: 20px;
+}
+
+.custom-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+.custom-card-text {
+    color: #ddd;
+}
+
+.details {
+    display: none;
+}
+
+.toggle-details {
+    transition: transform 0.3s ease;
+}

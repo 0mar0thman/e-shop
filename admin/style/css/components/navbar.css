@@ -1,0 +1,41 @@
+/* === Navbar Styles === */
+.navbar {
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* === Dropdown Styles === */
+.dropdown-menu {
+    background-color: var(--white-color);
+    border: none;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    color: var(--black-color);
+    padding: 10px 20px;
+    transition: var(--transition);
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: var(--primary-color);
+}

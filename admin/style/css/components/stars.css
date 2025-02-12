@@ -1,0 +1,15 @@
+/* تنسيق النجوم */
+.star-rating {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating .star {
+    transition: color 0.3s ease;
+}
+
+.star-rating .star:hover,
+.star-rating .star.active {
+    color: #ffc107;
+}

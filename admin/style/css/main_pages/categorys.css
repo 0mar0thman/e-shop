@@ -1,0 +1,280 @@
+ /* === Global Styles === */
+ body {
+    background-color: #1a1d20;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Container Styles === */
+.custom-form-container {
+    display: flex;
+    align-items: center;
+}
+
+.custom-graphics-col {
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    height: 586px;
+}
+
+/* === Graphics Styles === */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.graphics-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.graphics-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.graphics-content p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.slick-slider {
+    margin-top: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.slick-slider img {
+    border-radius: 15px;
+}
+
+.interactive-icons {
+    margin-top: 20px;
+}
+
+.interactive-icons i {
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.interactive-icons i:hover {
+    color: #007bff;
+}
+
+/* === Card Styles === */
+.custom-form-card {
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    background: linear-gradient(45deg, #34495e, #2c3e50);
+    border-bottom: none;
+}
+
+.card-body {
+    background-color: #34495e;
+    border-radius: 0 0 15px 15px;
+}
+
+/* === Form Styles === */
+.form-control {
+    background-color: #1a1d20;
+    border: 1px solid #444;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #1a1d20;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    color: #ffffff;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+}
+
+.invalid-feedback {
+    color: #ff6b6b;
+}
+
+/* === Button Styles === */
+.btn-dark {
+    background: linear-gradient(45deg, #34495e, #2c3e50);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background: linear-gradient(45deg, #2c3e50, #34495e);
+    transform: translateY(-2px);
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .custom-graphics-col {
+        display: none;
+    }
+
+    .custom-form-col {
+        width: 100%;
+    }
+
+    .form-control {
+        padding: 10px 12px;
+    }
+
+    .btn-dark {
+        padding: 10px 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .custom-graphics-col {
+        width: 50%;
+    }
+
+    .custom-form-col {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #b0b0b0;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
+
+.btn-success {
+    background-color: #198754;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-info {
+    background-color: #0dcaf0;
+    border: none;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.custom-h2 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.header-section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.control-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.control-buttons a {
+    text-decoration: none;
+}

@@ -1,0 +1,75 @@
+/* تنسيق مخصص لـ SelectBoxIt */
+.selectboxit-container {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.selectboxit-container .selectboxit {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.selectboxit-container .selectboxit:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+}
+
+.selectboxit-container .selectboxit:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.selectboxit-container .selectboxit-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.selectboxit-container .selectboxit-options {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+.selectboxit-container .selectboxit-option {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.selectboxit-container .selectboxit-option:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.selectboxit-container .selectboxit-option.selectboxit-selected {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.selectboxit-container .selectboxit-text i {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+.selectboxit-container span {
+    height: 48px;
+    line-height: 30px;
+}
+
+.selectboxit-option-icon-container {
+    padding-left: 15px;
+}
+
+.selectboxit .selectboxit-option-icon-container {
+    margin-top: 8px;
+}

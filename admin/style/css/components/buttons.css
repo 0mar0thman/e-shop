@@ -1,0 +1,33 @@
+/* === Button Styles === */
+.custom-btn-success {
+    background: linear-gradient(135deg, var(--success-color), #218838);
+    border: none;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.custom-btn-success:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+}
+
+.custom-btn-danger {
+    background: linear-gradient(135deg, var(--danger-color), #c82333);
+    border: none;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.custom-btn-danger:hover {
+    background: linear-gradient(135deg, #c82333, #bd2130);
+}
+
+.custom-btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.custom-btn-primary:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}

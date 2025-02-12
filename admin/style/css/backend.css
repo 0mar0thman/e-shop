@@ -1,0 +1,514 @@
+/* === Global Variables === */
+:root {
+    --bs-dark-rgb: 52, 58, 64;
+    /* Dark background color */
+    --bs-bg-opacity: 0.8;
+    /* Background opacity */
+    --white-color: #ffffff;
+    /* White text color */
+    --black-color: #000000;
+    /* Black text color */
+    --primary-color: #007bff;
+    /* Primary color */
+    --secondary-color: #0056b3;
+    /* Secondary color */
+    --success-color: #28a745;
+    /* Success color */
+    --danger-color: #dc3545;
+    /* Danger color */
+    --warning-color: #e67e22;
+    /* Warning color */
+    --info-color: #3498db;
+    /* Info color */
+    --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    --transition: all 0.3s ease;
+    /* Transition effect */
+}
+
+/* === Global Styles === */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+    /* Dark background */
+    color: var(--white-color);
+    /* White text */
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* === Navbar Styles === */
+.navbar {
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* === Dropdown Styles === */
+.dropdown-menu {
+    background-color: var(--white-color);
+    /* White background */
+    border: none;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    color: var(--black-color);
+    /* Black text */
+    padding: 10px 20px;
+    transition: var(--transition);
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    /* Light gray background */
+    color: var(--primary-color);
+    /* Primary color text */
+}
+
+/* === Login Page Styles === */
+.login {
+    background: var(--white-color);
+    /* White background */
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login h4 {
+    color: var(--black-color);
+    /* Black text */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.login .form-control {
+    height: 45px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.login .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login .btn {
+    height: 45px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.login .btn-primary {
+    background: var(--primary-color);
+    border: none;
+}
+
+.login .btn-primary:hover {
+    background: var(--secondary-color);
+}
+
+.login .btn-outline-primary {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.login .btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* === Dashboard Page Styles === */
+.dashboard-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+    /* Dark background */
+}
+
+h1 {
+    text-align: center;
+    color: var(--white-color);
+    /* White text */
+    margin-bottom: 30px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.stat-box {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 22%;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid #1a1d20;
+}
+
+.stat-box:hover {
+    transform: translateY(-2px);
+}
+
+.stat-box h2 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--white-color);
+    /* White text */
+}
+
+.stat-box p {
+    margin: 10px 0 0;
+    font-size: 24px;
+    color: var(--white-color);
+    /* White text */
+    font-weight: bold;
+}
+
+.stat-box:nth-child(1) {
+    border-bottom: 4px solid var(--info-color);
+}
+
+.stat-box:nth-child(2) {
+    border-bottom: 4px solid var(--warning-color);
+}
+
+.stat-box:nth-child(3) {
+    border-bottom: 4px solid var(--success-color);
+}
+
+.stat-box:nth-child(4) {
+    border-bottom: 4px solid var(--danger-color);
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.list {
+    background-color: var(--white-color);
+    /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+    box-shadow: var(--shadow);
+}
+
+.list h2 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: var(--black-color);
+    /* Black text */
+    border-bottom: 2px solid var(--info-color);
+    padding-bottom: 10px;
+}
+
+.list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list ul li {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    color: var(--white-color);
+    /* White text */
+    transition: var(--transition);
+}
+
+.list ul li:hover {
+    background-color: #e0e0e0;
+    color: var(--black-color);
+    /* Black text */
+}
+
+/* === Edit Page Styles === */
+.needs-validation {
+    background-color: rgba(var(--bs-dark-rgb), 0.2) !important;
+    color: var(--white-color);
+    /* White text */
+}
+
+.red {
+    color: var(--danger-color) !important;
+}
+
+/* === Card Styles === */
+.custom-card {
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+    transition: var(--transition);
+
+}
+
+.custom-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.custom-card-body {
+    padding: 20px;
+}
+
+.custom-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+.custom-card-text {
+    color: #ddd;
+}
+
+.details {
+    display: none;
+}
+
+.toggle-details {
+    transition: transform 0.3s ease;
+}
+
+/* === Button Styles === */
+.custom-btn-success {
+    background: linear-gradient(135deg, var(--success-color), #218838);
+    border: none;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.custom-btn-success:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+}
+
+.custom-btn-danger {
+    background: linear-gradient(135deg, var(--danger-color), #c82333);
+    border: none;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.custom-btn-danger:hover {
+    background: linear-gradient(135deg, #c82333, #bd2130);
+}
+
+.custom-btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.custom-btn-primary:hover {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    .stat-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .lists {
+        flex-direction: column;
+    }
+
+    .list {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .login {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .login h4 {
+        font-size: 1.2rem;
+    }
+
+    .login .form-control {
+        height: 40px;
+    }
+
+    .login .btn {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .stat-box {
+        width: 48%;
+    }
+
+    .list {
+        width: 48%;
+    }
+}
+
+/* === Table Styles === */
+.rounded-table {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.rounded-table thead {
+    border-radius: 15px 15px 0 0;
+}
+
+.rounded-table tbody tr:last-child {
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* تنسيق النجوم */
+.star-rating {
+    font-size: 2rem;
+    color: #ddd;
+    /* لون النجوم غير المحددة */
+    cursor: pointer;
+}
+
+.star-rating .star {
+    transition: color 0.3s ease;
+}
+
+.star-rating .star:hover,
+.star-rating .star.active {
+    color: #ffc107;
+    /* لون النجوم المحددة */
+}
+
+/* تنسيق مخصص لـ SelectBoxIt */
+.selectboxit-container {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.selectboxit-container .selectboxit {
+    background-color: #ffffff; /* لون خلفية أبيض */
+    border: 2px solid #e0e0e0; /* لون حدود فاتح */
+    border-radius: 8px; /* زوايا مدورة */
+ 
+    font-size: 1rem; /* حجم الخط */
+    color: #333; /* لون النص */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    transition: all 0.3s ease; /* تأثير سلس */
+}
+
+.selectboxit-container .selectboxit:hover {
+    background-color: #f8f9fa; /* لون خلفية عند التمرير */
+    border-color: #007bff; /* لون حدود أزرق عند التمرير */
+}
+
+.selectboxit-container .selectboxit:focus {
+    outline: none; /* إزالة الحدود الافتراضية */
+    border-color: #007bff; /* لون حدود أزرق عند التركيز */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* ظل أزرق عند التركيز */
+}
+
+.selectboxit-container .selectboxit-text {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* تباعد بين الأيقونة والنص */
+}
+
+.selectboxit-container .selectboxit-options {
+    border: 2px solid #e0e0e0; /* لون حدود فاتح */
+    border-radius: 8px; /* زوايا مدورة */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    background: #ffffff; /* لون خلفية القائمة */
+}
+
+.selectboxit-container .selectboxit-option {
+    padding: 10px 15px; /* تباعد داخلي */
+    font-size: 1rem; /* حجم الخط */
+    color: #333; /* لون النص */
+    transition: background-color 0.3s ease; /* تأثير سلس */
+}
+
+.selectboxit-container .selectboxit-option:hover {
+    background-color: #007bff; /* لون خلفية أزرق عند التمرير */
+    color: #fff; /* لون النص أبيض عند التمرير */
+}
+
+.selectboxit-container .selectboxit-option.selectboxit-selected {
+    background-color: #0056b3; /* لون خلفية أزرق غامق للخيار المحدد */
+    color: #fff; /* لون النص أبيض للخيار المحدد */
+}
+
+/* أيقونات FontAwesome */
+.selectboxit-container .selectboxit-text i {
+    font-size: 1.2rem; /* حجم الأيقونة */
+    color: #007bff; /* لون الأيقونة أزرق */
+}
+
+.selectboxit-container span {
+    height: 48px;
+    line-height: 30px;
+}
+
+.selectboxit-option-icon-container {
+    padding-left: 15px; /* تباعد داخلي للأيقونات */
+}
+
+.selectboxit .selectboxit-option-icon-container {
+    margin-top: 8px;
+}
+
+
+
+
+
+

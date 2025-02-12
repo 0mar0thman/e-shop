@@ -1,0 +1,71 @@
+.star-icon:hover,
+.star-icon.hovered {
+    color: gold !important;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    grid-column: span 3;
+}
+
+.form-control-lg {
+    width: 100%;
+}
+
+.text-danger {
+    font-size: 0.875em;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    border-color: #343a40;
+    width: 50%;
+    /* تصغير عرض زر الحفظ إلى 50% */
+    margin: 0 auto;
+    /* توسيط الزر */
+}
+
+.btn-dark:hover {
+    background-color: #23272b;
+    border-color: #1d2124;
+}
+
+/* استعلامات الوسائط لجعل النموذج متجاوبًا */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* عمودين في الشاشات المتوسطة */
+    }
+
+    .full-width {
+        grid-column: span 2;
+        /* توسيع العناصر الكاملة إلى عمودين */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* عمود واحد في الشاشات الصغيرة */
+    }
+
+    .full-width {
+        grid-column: span 1;
+        /* توسيع العناصر الكاملة إلى عمود واحد */
+    }
+
+    .btn-dark {
+        width: 100%;
+        /* جعل الزر يأخذ العرض الكامل في الشاشات الصغيرة */
+    }
+}
